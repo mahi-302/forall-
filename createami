@@ -1,4 +1,5 @@
-node('main'){
+pipeline{
+agent {label 'main'}
     def jsonitem
     stage('AWS CLI Version'){
         sh "aws --version"
